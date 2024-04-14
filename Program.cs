@@ -1,8 +1,6 @@
-﻿
-using System.Diagnostics;
-using System.Text;
+﻿using System.Text;
 
-static bool TestEmpty(okPriorityQueue fpq)
+static bool TestEmpty(OkPrioQueue fpq)
 {
     StringBuilder sb = new StringBuilder();
 
@@ -28,7 +26,7 @@ static bool TestEmpty(okPriorityQueue fpq)
     return true;
 }
 
-static void Test(okPriorityQueue fpq)
+static void Test(OkPrioQueue fpq)
 {
     if (fpq.IsValid())
     {
@@ -49,7 +47,7 @@ static void Test(okPriorityQueue fpq)
     }
 }
 
-var fpq = new okPriorityQueue(15);
+var fpq = new OkPrioQueue(15);
 
 fpq.Clear();
 
