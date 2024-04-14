@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Text;
 
-static bool TestEmpty(FasterPriorityQueue.PriorityQueue fpq)
+static bool TestEmpty(okPriorityQueue fpq)
 {
     StringBuilder sb = new StringBuilder();
 
@@ -28,7 +28,7 @@ static bool TestEmpty(FasterPriorityQueue.PriorityQueue fpq)
     return true;
 }
 
-static void Test(FasterPriorityQueue.PriorityQueue fpq)
+static void Test(okPriorityQueue fpq)
 {
     if (fpq.IsValid())
     {
@@ -49,7 +49,7 @@ static void Test(FasterPriorityQueue.PriorityQueue fpq)
     }
 }
 
-var fpq = new FasterPriorityQueue.PriorityQueue(15);
+var fpq = new okPriorityQueue(15);
 
 fpq.Clear();
 

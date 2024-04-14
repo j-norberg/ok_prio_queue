@@ -1,11 +1,9 @@
 ﻿#define EXTRA_DEBUG
 
-namespace okPriorityQueue
-{
     // Faster Priority Queue
     // jnorberg 2024-05-01
 
-    public sealed class PriorityQueue
+    public sealed class okPriorityQueue
     {
         private float[] _prios; // priority
         private int[] _ids; // ids
@@ -13,7 +11,7 @@ namespace okPriorityQueue
         public int Count => _count;
 
         // ctor
-        public PriorityQueue(int initialCapacity)
+        public okPriorityQueue(int initialCapacity)
         {
 #if DEBUG
             if (initialCapacity <= 0)
@@ -228,5 +226,3 @@ namespace okPriorityQueue
         }
 
     }
-
-}
